@@ -14,7 +14,7 @@ app = web.Application(loop=loop)
 
 aiohttp_jinja2.setup(app,
     loader=jinja2.FileSystemLoader('templates'))
-setup_routes(app)
 
+setup_routes(app)
 
 web.run_app(app, host='127.0.0.1', port=8080)
