@@ -1,0 +1,27 @@
+<form method='post' action="/form">
+        <table width="80%" border="5" align="center" bgcolor="white">
+            <tbody>
+                <tr>
+                    <th colspan= "4">
+                            Faculty Identification Number:
+                            <input type="text" id="facultyId" name="facultyId" value=""/>
+
+                    </th>
+                </tr>
+                    <tr>
+                    <th colspan= "4">
+                        Number Of Evaluations:
+{#                            {% if posts.find({"Applicants.appId" : Id},{'Applicants.Evaluators':{'$exists': True }}).count() == 0 %}#}
+{#                                {{posts.find({"Applicants.appId" : Id},{'Applicants.Evaluators':{'$exists': True }}).count() }}#}
+{#                            {% else %}#}
+{#                                {% for post in posts.find({"Applicants.appId" : Id}, { "Applicants.$.Evaluators" : 1 }) %}#}
+{#                                    {{post["Applicants"][0]["Evaluators"]|length}}#}
+{#                                {% endfor %}#}
+{#                            {% endif %}#}
+                    </th>
+                    </tr>
+                    <th colspan= "4"><button type="submit" >Submit</button></th>
+
+                </tbody>
+            </table>
+</form>
