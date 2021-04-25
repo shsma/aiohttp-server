@@ -1,4 +1,4 @@
-# aiohttp-bsic-server
+# aiohttp-basic-server
 
 ## Make it run
 - `python3 -m venv venv`
